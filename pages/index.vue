@@ -1,83 +1,48 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        budparr.com
-      </h1>
-      <h2 class="subtitle">
-        My posh Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+  <section class="min-h-screen">
+    <div class="container">
+      <PostList :posts="indexPosts" :pagination="indexPagination" />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
-import { ghostAPI, postIndexFields } from "@/util/ghost";
-
+import PostList from "@/components/PostList.vue";
 export default {
+  name: "PostIndex",
   components: {
-    Logo
+    PostList
   },
-  async asyncData() {
-    const posts = await ghostAPI().posts.browse({
-      fields: postIndexFields
-    });
-    const post = posts[0];
-    return {
-      post
-    };
+  async fetch({ params, store, error, payload }) {
+    if (payload) {
+      store.commit("setIndexPosts", payload);
+    } else {
+      let pageNumber = 1;
+      if (params.pageNumber) {
+        pageNumber = params.pageNumber;
+      }
+      try {
+        await store.dispatch("getIndexPosts", {
+          filter: "",
+          pageNumber
+        });
+      } catch (e) {
+        // as far as user is concerned this isn't an API failure
+        error({ statusCode: 404, message: e.message });
+      }
+      // remember to use await here so data will be available
+    }
+  },
+  computed: {
+    indexPosts() {
+      return this.$store.state.indexPosts;
+    },
+    indexPagination() {
+      return this.$store.state.indexPagination;
+    },
+    siteSettings() {
+      return this.$store.state.siteSettings;
+    }
   }
 };
 </script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>

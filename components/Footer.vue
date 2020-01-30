@@ -1,9 +1,8 @@
 <template>
-  <footer class="footer">
-    <div class="content has-text-centered">
+  <footer class="mt-16 bg-linen-600">
+    <div class="px-8 pb-4 pt-16 flex justify-between">
       <p>
-        <strong>nuxt-ghost-starter</strong> by
-        <a href="https://www.jacobsngoodwin.com">Jacob Goodwin</a>
+        <a href="/">Bud Parr</a>
       </p>
     </div>
     <div class="content has-text-centered">

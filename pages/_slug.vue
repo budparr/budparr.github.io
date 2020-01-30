@@ -1,17 +1,13 @@
 <template>
-  <section class="section">
-    <div class="container post-container">
-      <h1 class="title has-text-weight-bold has-text-centered has-text-primary">
+  <section class="container max-w-2xl px-4 lg:px-0 my-4 lg:my-32">
+    <div class="post-container text-gray-800">
+      <h1 class="font-brand text-5xl leading-tight">
         {{ post.title }}
       </h1>
       <figure v-if="post.feature_image" class="post-feature-image">
         <img :src="post.feature_image" alt="Post Image" />
       </figure>
-      <article
-        ref="postContent"
-        class="content post-content"
-        v-html="post.html"
-      />
+      <article ref="postContent" class="c-rich-text" v-html="post.html" />
     </div>
   </section>
 </template>

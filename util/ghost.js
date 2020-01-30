@@ -5,7 +5,7 @@ const ghost = (url, key) => {
     //   url: url,
     //   key: key,
     url: "https://budparr.ghost.io",
-    key: "945c688877b5507f89b83f192f",
+    key: "58d161c0eea90dd98cd65ef772",
     version: "v3"
   });
 };

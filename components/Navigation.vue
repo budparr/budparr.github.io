@@ -1,8 +1,12 @@
 <template>
-  <nav class="bg-red-300" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <nuxt-link class="navbar-item" to="/">
-        <img :src="settings.logo" alt="Site Logo" />
+  <nav
+    class="container lg:mt-16 py-16 bg-white"
+    role="navigation"
+    aria-label="main navigation"
+  >
+    <div class="">
+      <nuxt-link class="font-brand font-bold text-3xl" to="/">
+        Bud Parr
       </nuxt-link>
       <a
         role="button"
