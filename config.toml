@@ -1,7 +1,7 @@
 title = "Bud Parr"
 baseURL = "https://www.budparr.com"
 languageCode = "en-us"
-theme = "gohugo-theme-ananke"
+theme = "hugo-theme-novela"
 
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
