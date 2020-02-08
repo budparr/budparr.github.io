@@ -3,7 +3,7 @@ date: 2014-08-29T00:00:00Z
 tags:
 - Static Site Generators
 title: The Post-CMS Landscape 
-draft: false
+draft: true
 url: /2014/08/29/the-post-cms-landscape/
 ---
 
