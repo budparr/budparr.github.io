@@ -1,10 +1,10 @@
 ---
 class: dev
 date: 2014-03-14T00:00:00Z
-published: true
 tags:
 - Static Site Generators
-title: The No-db Landscape (part 1)
+title: The No-db Landscape (part 1) 
+draft: false
 url: /2014/03/14/static-site-generator-landscape/
 ---
 
@@ -23,7 +23,8 @@ This is what a document might look like in a flat-file site (or see [this post a
 
 ~~~
 ---
-title: Title  
+title: Title   
+draft: true
 category: Category  
 layout: article  
 date: November 10, 2013  
@@ -102,14 +103,16 @@ Here's an example of a data file for a list of articles I've used in Jekyll:
 ~~~
 
 -
-  title: "Biometric Privacy Trade-off Exposed in Missing Jet's Passports"
+  title: "Biometric Privacy Trade-off Exposed in Missing Jet's Passports" 
+draft: true
   date: 2014-03-10
   publication: "Bloomberg Businessweek"
   link_to_original: "http://www.businessweek.com/"
   category: Finance
 
 -
-  title: "New Details Emerge in Mystery of Bronze Apollo Held by Hamas"
+  title: "New Details Emerge in Mystery of Bronze Apollo Held by Hamas" 
+draft: true
   date: 2014-02-10
   link_to_original: "http://www.businessweek.com/"
   publication: "Bloomberg Businessweek"

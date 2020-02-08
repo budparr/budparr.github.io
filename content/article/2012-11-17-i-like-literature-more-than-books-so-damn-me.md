@@ -2,7 +2,8 @@
 tags:
 - Ebooks
 date: 2012-11-17T00:00:00Z
-title: I Like Literature more than Books, so Damn Me
+title: I Like Literature more than Books, so Damn Me 
+draft: false
 url: /2012/11/17/i-like-literature-more-than-books-so-damn-me/
 ---
 

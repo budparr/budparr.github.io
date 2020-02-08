@@ -1,7 +1,8 @@
 ---
 class: dev
 date: 2013-08-15T00:00:00Z
-title: Me, The Summer Vacation Reading Issue
+title: Me, The Summer Vacation Reading Issue 
+draft: false
 url: /2013/08/15/the-summer-vacation-reading-issue/
 ---
 

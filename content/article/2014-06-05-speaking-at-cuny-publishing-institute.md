@@ -1,9 +1,9 @@
 ---
 class: dev
 date: 2014-06-05T00:00:00Z
-published: true
 tags: 
-title: Speaking at the CUNY Publishing Institute
+title: Speaking at the CUNY Publishing Institute 
+draft: false
 url: /2014/06/05/speaking-at-cuny-publishing-institute/
 ---
 

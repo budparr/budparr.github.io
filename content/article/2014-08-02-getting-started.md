@@ -2,10 +2,11 @@
 tags:
 - getting-started
 date: 2014-08-02T00:00:00Z
-published: true
 tags:
 - Static Site Generators
-title: Getting Started with Static Site Generators
+title: Getting Started with Static Site Generators 
+draft: false
+hero: /images/life-must-be-lived.svg
 url: /2014/08/02/getting-started/
 ---
 

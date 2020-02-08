@@ -1,7 +1,8 @@
 ---
 class: dev
 date: 2013-09-30T00:00:00Z
-title: What an Author Site Should Look Like
+title: What an Author Site Should Look Like 
+draft: false
 url: /2013/09/30/what-an-author-site-should-look-like/
 ---
 
