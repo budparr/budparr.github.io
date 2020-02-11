@@ -5,6 +5,7 @@ media_folder: static/images
 public_folder: /images
 publish_mode: editorial_workflow
 site_url: https://budparr.com/
+show_preview_links: true
 collections:
   - name: author
     label: Author
