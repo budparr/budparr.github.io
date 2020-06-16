@@ -1,19 +1,9 @@
 {
 	"name": "budparr.com",
-	"version": "1.0.0",
+	"version": "4.0.0",
 	"description": "personal site of Bud Parr",
 	"main": "index.js",
-	"scripts": {
-		"gethugo": "bash get-hugo.sh",
-		"version": "auto-changelog -p --template keepachangelog --unreleased true",
-		"hugo": "NODE_ENV=development bin/hugo* server --gc --navigateToChanged --noHTTPCache",
-		"hugo-prod": "NODE_ENV=production bin/hugo* --gc --minify",
-		"webpack": "NODE_ENV=development webpack --mode=development --progress --colors --watch",
-		"webpack-prod": "NODE_ENV=production webpack --mode=production",
-		"clean": "rm -rf public/ static/dist resources",
-		"deploy": "run-s webpack-prod hugo-prod",
-		"start": "run-p webpack hugo"
-	},
+	"scripts": {},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/budparr/budparr.com.git"
@@ -29,8 +19,5 @@
 		"useTabs": true,
 		"singleQuote": false,
 		"proseWrap": "preserve"
-	},
-	"hugo": {
-		"version": "0.64.0"
 	}
 }
