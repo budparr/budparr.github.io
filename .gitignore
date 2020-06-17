@@ -26,3 +26,5 @@ nbproject
 public
 # Folders to ignore
 node_modules
+# Ignore eleventy output during manual tests
+_site/
