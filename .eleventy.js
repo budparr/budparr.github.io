@@ -5,7 +5,7 @@
  */
 
 // Require native Node.js modules
-var fs = require('fs')
+var fs = require("fs");
 
 /**
  * Require the includes module for the following.
@@ -18,7 +18,7 @@ var fs = require('fs')
  * rather than all in this file,
  * helps keep the codebase organized—at least that’s the idea.
  */
-var includes = require('./_includes/index')
+var includes = require("./src/_includes/index");
 
 /**
  * 11ty’s configuration module
@@ -28,30 +28,29 @@ var includes = require('./_includes/index')
  * @see {@link https://www.11ty.dev/docs/config/ Configuring 11ty}
  */
 module.exports = function (eleventyConfig) {
-
   let env = process.env.ELEVENTY_ENV;
 
   // Pass 11ty’s Conig object to the includes module (~/_includes)
-  includes(eleventyConfig)
+  includes(eleventyConfig);
 
   /**
    * Combine data in the Eleventy data cascade, rather than overwriting it
    * @see {@link https://www.11ty.dev/docs/data-deep-merge/ Data deep merge in 11ty}
    */
-  eleventyConfig.setDataDeepMerge(true)
+  eleventyConfig.setDataDeepMerge(true);
 
   /**
    * Copy static assets to the output directory
    * @see {@link https://www.11ty.dev/docs/copy/ Passthrough copy in 11ty}
    */
-  eleventyConfig.addPassthroughCopy('css')
+  eleventyConfig.addPassthroughCopy("css");
 
   /**
    * Have Eleventy watch the following additional files for live browsersync
    * @see @{@link https://www.11ty.dev/docs/config/#add-your-own-watch-targets Add your own watch targets in 11ty}
    */
   // eleventyConfig.addWatchTarget('./**/*.css')
-  eleventyConfig.addWatchTarget('./**/*.js')
+  eleventyConfig.addWatchTarget("./**/*.js");
 
   /**
    * Serve the rendered 404 page when using `eleventy --serve` locally
@@ -61,31 +60,27 @@ module.exports = function (eleventyConfig) {
     callbacks: {
       ready: (err, bs) => {
         bs.addMiddleware("*", (req, res) => {
-          const content_404 = fs.readFileSync('_site/404.html');
+          const content_404 = fs.readFileSync("_site/404.html");
           // Provides the 404 content without redirect
           res.write(content_404);
           // Add 404 http status code in request header
           // res.writeHead(404, { "Content-Type": "text/html" })
           res.writeHead(404);
-          res.end()
-        })
-      }
-    }
-  })
+          res.end();
+        });
+      },
+    },
+  });
 
   // If you want to use an alternative file structure,
   // then you can uncomment this return statement
   // and change the values for one or more of these directories
   // (defaults shown).
-  /*
+
   return {
     dir: {
-      input: '.',
-      includes: '_includes',
-      data: '_data',
-      output: '_site'
+      input: "src",
+      output: "public",
     },
-    pathPrefix: '/',
-  }
-  */
-}
+  };
+};

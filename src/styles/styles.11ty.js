@@ -20,7 +20,7 @@ module.exports = class {
     return await postcss([
       // require('postcss-comment'),
       require("postcss-import"),
-      require(`tailwindcss`)(`./styles/tailwind.config.js`),
+      require(`tailwindcss`)(`./src/styles/tailwind.config.js`),
       require(`autoprefixer`),
       ...(process.env.ELEVENTY_PRODUCTION
         ? [
