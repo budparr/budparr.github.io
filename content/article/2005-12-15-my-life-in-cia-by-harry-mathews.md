@@ -1,19 +1,19 @@
 ---
-tags:
-- Book Review
+tags: ["Book Review"]
 date: 2005-12-15T00:00:00Z
-title: My Life in CIA, by Harry Mathews 
+title: My Life in CIA, by Harry Mathews
 draft: false
 url: /2005/12/15/my-life-in-cia-by-harry-mathews/
 ---
+
 Around his early 40s a man looks at his life, searches, and more often than not he finds his youth has gone missing. If he has the means he buys a sports car or a boat, or if he's Harry Mathews he becomes a spy for CIA.
 
 Well, not really a spy; he pretended. He pretended to be a spy because circumstances opened themselves to it and he was an adventurous, creative guy who also happened to be a little bored.
 
 The setting for My Life in CIA (those in the know don't use “the” in front of CIA, we learn) is Paris, France over the course of 1973. Harry Mathews is a divorced, well-to-do 43 year old man of the 70s - “snug black velvet bellbottoms” and all - whose cocktail party friends suspect as being a spy. Every denial becomes a confirmation in their eyes so he decides to indulge and ride the intrigue for whatever mischievous fun he can find. Here's an example:
 
-> “The following Monday I started passing the Saint Germain _without_ going in. I carried a briefcase and walked briskly west down Boulevard Saint-Germain. On the corner of Rue Saint-Simon I stopped in the recessed doorway of a bookstore and looked back. No sign of my mark, not the first morning or the next; the third he was there. I led him by a devious route - Rues de Bellechasse, Varenne, Bourgogne, Las-Cases - to the church of Sainte Clothilde. I walked slowly and expectantly round the little park in front of the church. Then I hurried home a quite different way. I made sure I never lost my tail.  
->   
+> “The following Monday I started passing the Saint Germain _without_ going in. I carried a briefcase and walked briskly west down Boulevard Saint-Germain. On the corner of Rue Saint-Simon I stopped in the recessed doorway of a bookstore and looked back. No sign of my mark, not the first morning or the next; the third he was there. I led him by a devious route - Rues de Bellechasse, Varenne, Bourgogne, Las-Cases - to the church of Sainte Clothilde. I walked slowly and expectantly round the little park in front of the church. Then I hurried home a quite different way. I made sure I never lost my tail.
+>
 > That afternoon I took the metro to Saint Augustin on the right bank. I got straight into a taxi that deposited me, back on the other side of town, near an Avis garage in the fifteenth arrondissement. I rented their cheapest model, a Peugeot 204. For half an hour I had fun practicing ”evasive driving techniques“ before heading for Sainte Clothilde. I pulled into the first space that opened up on the park side of Rue Marignan. Before leaving I cracked the rear window next to the sidewalk, left the same door unlocked, and pasted a two-inch strip of Scotch tape over its lower edge.”
 
 Most I think, might be unnerved and stop the game after being followed by a stranger, but of course most people probably wouldn't pretend to be a spy. If a little Sunday cloak and dagger were not enough, Mathews goes so far as to create a company to act as cover and go out in the world laying a trail of open questions for the “real” spies to find. And find him they do.

@@ -3,7 +3,11 @@
 	"version": "4.0.0",
 	"description": "personal site of Bud Parr",
 	"main": "index.js",
-	"scripts": {},
+	"scripts": {
+		"build": "ELEVENTY_ENV=production npx eleventy",
+		"dev": "ELEVENTY_ENV=development npx eleventy --serve",
+		"debug": "DEBUG=* npx eleventy"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/budparr/budparr.com.git"
@@ -14,10 +18,23 @@
 		"url": "https://github.com/budparr/budparr.com/issues"
 	},
 	"homepage": "https://github.com/budparr/budparr.com#readme",
+	"devDependencies": {
+		"@11ty/eleventy": "^0.11.0",
+		"clean-css": "^4.2.3",
+		"html-minifier": "^4.0.0",
+		"terser": "^4.6.13"
+	},
 	"prettier": {
 		"tabWidth": 2,
-		"useTabs": true,
+		"useTabs": false,
 		"singleQuote": false,
 		"proseWrap": "preserve"
+	},
+	"dependencies": {
+		"@fullhuman/postcss-purgecss": "^2.3.0",
+		"autoprefixer": "^9.8.0",
+		"postcss": "^7.0.32",
+		"postcss-import": "^12.0.1",
+		"tailwindcss": "^1.4.6"
 	}
 }

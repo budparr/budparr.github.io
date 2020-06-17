@@ -1,17 +1,19 @@
 ---
 tags:
-- Ebooks
+  - Ebooks
 date: 2012-11-17T00:00:00Z
-title: I Like Literature more than Books, so Damn Me 
+title: I Like Literature more than Books, so Damn Me
 draft: false
 url: /2012/11/17/i-like-literature-more-than-books-so-damn-me/
 ---
 
 This is a cross-post of my comment on Andrew Piper's article on Slate: <a href="http://www.slate.com/articles/arts/culturebox/2012/11/reading_on_a_kindle_is_not_the_same_as_reading_a_book.single.html">"Out of Touch - E-reading isn’t reading."</a> Piper says:
+
 <blockquote>"I no longer pause over the slight caress of the almost turned page—a rapture of anticipation—I just whisk away."</blockquote>
 This is sentimental and anti-intellectual. What would Dostoyevsky, for instance, say if he heard that his words meant so little without some trifling material satisfaction?
 
 Indeed, Tim Parks points out at the <a href="http://www.nybooks.com/blogs/nyrblog/2012/feb/15/ebooks-cant-burn/">New York Review of Books</a> that:
+
 <blockquote>"The e-book, by eliminating all variations in the appearance and weight of the material object we hold in our hand and by discouraging anything but our focus on where we are in the sequence of words (the page once read disappears, the page to come has yet to appear) would seem to bring us closer than the paper book to the essence of the literary experience. Certainly it offers a more austere, direct engagement with the words appearing before us and disappearing behind us than the traditional paper book offers, giving no fetishistic gratification as we cover our walls with famous names. It is as if one had been freed from everything extraneous and distracting surrounding the text to focus on the pleasure of the words themselves. In this sense the passage from paper to e-book is not unlike the moment when we passed from illustrated children’s books to the adult version of the page that is only text. This is a medium for grown-ups."</blockquote>
 And Mr. Piper's assertion here is inexcusable:
 <blockquote>"And as one study after another affirms, the more time we spend reading screens, the less time we spend reading individual units of the text. Skimming is the new normal."</blockquote>

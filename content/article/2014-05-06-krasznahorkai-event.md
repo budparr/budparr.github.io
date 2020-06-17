@@ -1,7 +1,6 @@
 ---
 date: 2014-05-06T00:00:00Z
-tags: 
-title: László Krasznahorkai and Colm Tóibín 
+title: "László Krasznahorkai and Colm Tóibín"
 draft: false
 hero: /images/hamlet-king.svg
 url: /2014/05/06/krasznahorkai-event/

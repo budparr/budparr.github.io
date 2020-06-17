@@ -2,8 +2,8 @@
 class: dev
 date: 2014-03-14T00:00:00Z
 tags:
-- Static Site Generators
-title: The No-db Landscape (part 1) 
+  - "Static Site Generators"
+title: The No-db Landscape (part 1)
 draft: false
 url: /2014/03/14/static-site-generator-landscape/
 ---
@@ -14,33 +14,33 @@ For the most part I've been using two applications. For purely static sites I us
 
 This article is aimed squarely at the designer/developer building websites for clients. Choosing the right technology is an important part of a developer's job so I'll go into my thinking here about when I why I might choose either.
 
-
-
 ### So what is the difference between a "Flat File CMS" and a "Static Site Generator"?
+
 Both flat-file CMSs (or file-based CMSs) and statically generated websites have no database at all. That alone is significant. All of your site's content is merely a collection of text files.
 
 This is what a document might look like in a flat-file site (or see [this post as a raw text file](https://raw.github.com/budparr/budparr.github.io/master/article/_posts/2014-03-14-static-site-generator-landscape.md)):
 
-~~~
+```
 ---
-title: Title   
+title: Title
 draft: true
-category: Category  
-layout: article  
-date: November 10, 2013  
-author: authorname  
----  
+category: Category
+layout: article
+date: November 10, 2013
+author: authorname
+---
 content goes here
 
 
 
-~~~
+```
 
 Generally speaking templates and layout schemes tend to be similar in both types of sites in that they use a central default or base layout and some easy way to include partials in your templates. While this layout scheme is not unique to no-db websites, it's a natural fit. In contrast to some of the popular, "traditional" content management systems, these apps assume nothing about your design, thankfully.
 
 All of the no-db applications organize content similarly in pages that can be organized around collections or categories, though folder structures and the way URL schemes vary from one app to another.
 
 #### The similarities end there.
+
 **Static site generators** do little more than the name implies. They compile text-based content files (when I say text file that may mean any sort of text file, depending on the app, including markdown or text) into HTML pages using templates to determine the layout of the page. Depending on the app, they may process Sass/Less or other files to help make development more efficient.
 
 Once the site is compiled you get a folder with your website in it. None of these are currently what you would call a CMS because there is no control panel and no inherent asset/content organizing principle or interface. And not a single bell or whistle to be found.
@@ -49,24 +49,23 @@ Most, though not all, of these apps run on a local computer via command line and
 
 The beauty of purely static sites, besides the significant performance gain, is that you can create all the complex queries you want in your templates and the end user will not be impacted because they're not run when the page loads, but at build time. Personally, this is a revelation. The value of a well organized website is that it should keep content creators from repeating themselves while simultaneously creating rich relationships and context around the content of a site. Static sites give me the freedom to create all the complex relationships I like, using content from wherever appropriate, with near total impunity in terms of performance.
 
-Keep in mind, that since the site is purely static, calendars or  other dynamic elements will need to be done outside of the site. I've been using javascript for calendaring in Jekyll, so this so far has not proven to be a problem.
+Keep in mind, that since the site is purely static, calendars or other dynamic elements will need to be done outside of the site. I've been using javascript for calendaring in Jekyll, so this so far has not proven to be a problem.
 
 While both types of software could be called flat-file, what we mean when we say **"flat-file CMS"** is likely to be a dynamic application that creates HTML pages on the fly when the page loads. These are a terrific go-between the traditional CMS and static site generators because there are no issues with deployment and no problems with dynamic content like calendars while still maintaining the benefits of storing your content in text files. Optionally, you can offer content creators a control panel and WYSIWYG editor, which is very often necessary for client work.
 
 #### Flat-file CMS
 
-Among the flat-file CMSs there are only a handful that have held my attention. [**Pico**](http://pico.dev7studios.com/) is a very lightweight flat-file CMS created by Gilbert Pellegrom from Dev7studios (interestingly, a Wordpress plugin shop). [**Kirby**](http://getkirby.com/) is the creation of Bastian Allgeier, which at $39.00 per site appears to be a sophisticated system at a low cost.
+Among the flat-file CMSs there are only a handful that have held my attention. [**Pico**](http://pico.dev7studios.com/) is a very lightweight flat-file CMS created by Gilbert Pellegrom from Dev7studios (interestingly, a Wordpress plugin shop). [**Kirby**](http://getkirby.com/) is the creation of Bastian Allgeier, which at \$39.00 per site appears to be a sophisticated system at a low cost.
 
-[**Statamic**](http://statamic.com/), which is also commercial and priced at $99 per site for developers, is an elegant CMS that is my go-to when I need to have a control panel for clients. You can give them the option of writing in Markdown, text, or WYSIWG. The feedback I've gotten from clients is that it's extremely easy to use, though some people get confused about what is a page and what is a post and how to create them.
+[**Statamic**](http://statamic.com/), which is also commercial and priced at \$99 per site for developers, is an elegant CMS that is my go-to when I need to have a control panel for clients. You can give them the option of writing in Markdown, text, or WYSIWG. The feedback I've gotten from clients is that it's extremely easy to use, though some people get confused about what is a page and what is a post and how to create them.
 
 Statamic uses a templating language that is simple yet fully featured. Organizing complex sites is doable but there's a learning curve. I've tripped up here and there figuring out how to create field groups for a particular content collection, as well as figuring out how URL structures and navigation work, but I've never felt that there was anything I could not create.
 
 I really put Statamic through its paces last year when I had--under a very tight deadline--to put together a conference [website](http://www.americaslatinofestival.org/events) where I had to bring together schedules for events from various disparate parts of the conference (in addition to the main conference there was a film festival and a children's festival and an art festival). For all the events there were related participants, and related venues. You'll see if you visit the page that it loads fairly quickly given its size (the content is greyed out because I wanted to show past events but make them grey as the event's time past). Each event, participant and venue page listed out all the other relationships as well.
 
-Statamic enjoys an active developer community and has a growing number of very polished add-ons. A Statamic site can get fairly expensive, given that integrated search and contact forms  will cost you $49 each, bringing a fully featured site to about $200, but the use-case here is for when you need to have a control panel that is confidently designed and a broad feature set.
+Statamic enjoys an active developer community and has a growing number of very polished add-ons. A Statamic site can get fairly expensive, given that integrated search and contact forms will cost you $49 each, bringing a fully featured site to about $200, but the use-case here is for when you need to have a control panel that is confidently designed and a broad feature set.
 
 Here are some additional examples of sites I've built in Statamic: [1](http://jackwhyland.com/), [2](http://themothbook.org/), [3](http://www.americasforconservation.org/).
-
 
 #### Static Site Generators
 
@@ -94,16 +93,16 @@ Jekyll is a Ruby app created by the founder of Github. It's the house-app for se
 
 As of this writing, when used with GitHub Pages, Jekyll doesn't allow any plugins because of restrictions on the hosting platform. If deployment isn't an issue there are plugins put out there to overcome some of Jekyll’s--born a “blogging platform for hackers”--lacunae, and there will be a whitelist of plugins allowed in a future release and I've managed to get by fine without them.
 
-Jekyll is also a bit more structured than many of the apps, using a post and page model where posts get taxonomies and chronological sorting whereas pages do not. The lack of taxonomies and sorting for pages is a big shortcoming, but I know that the project owners are working toward a more flexible, collections-based, model. All in all, I've enjoyed having to find creative solutions to Jekyll's constraints and have managed to create some fairly complex relationships between pieces of content, even if most everything has to be nested in little _posts folders scattered throughout the site.
+Jekyll is also a bit more structured than many of the apps, using a post and page model where posts get taxonomies and chronological sorting whereas pages do not. The lack of taxonomies and sorting for pages is a big shortcoming, but I know that the project owners are working toward a more flexible, collections-based, model. All in all, I've enjoyed having to find creative solutions to Jekyll's constraints and have managed to create some fairly complex relationships between pieces of content, even if most everything has to be nested in little \_posts folders scattered throughout the site.
 
 I use Jekyll's data model liberally and have enjoyed the freedom of just dumping lists in a Yaml file to use anywhere on a site, like turning that data into JSON files for use in, say, a calendar, or tabular data, or relationships like authors on a multi-author site.
 
 Here's an example of a data file for a list of articles I've used in Jekyll:
 
-~~~
+```
 
 -
-  title: "Biometric Privacy Trade-off Exposed in Missing Jet's Passports" 
+  title: "Biometric Privacy Trade-off Exposed in Missing Jet's Passports"
 draft: true
   date: 2014-03-10
   publication: "Bloomberg Businessweek"
@@ -111,7 +110,7 @@ draft: true
   category: Finance
 
 -
-  title: "New Details Emerge in Mystery of Bronze Apollo Held by Hamas" 
+  title: "New Details Emerge in Mystery of Bronze Apollo Held by Hamas"
 draft: true
   date: 2014-02-10
   link_to_original: "http://www.businessweek.com/"
@@ -119,7 +118,7 @@ draft: true
   category: Ancient
 
 
-~~~
+```
 
 To my mind there's nothing simpler than dumping some info in a text file, which compared to copying out each line of these into separate fields in a control panel is cumbersome.
 

@@ -1,16 +1,15 @@
 ---
 date: 2014-08-29T00:00:00Z
 tags:
-- Static Site Generators
-title: The Post-CMS Landscape 
+  - "Static Site Generators"
+title: The Post-CMS Landscape
 draft: true
 url: /2014/08/29/the-post-cms-landscape/
 ---
 
 In [_The No-db Landscape_](/article/static-site-generator-landscape/) I wrote about the differences between "flat-file" CMSs and static site generators. Today we'll have a look at the idea of a "Post-CMS" and some new developments.
 
-
-I didn't [make up](http://ben.balter.com/2012/10/01/welcome-to-the-post-cms-world/) it up, but I love the idea of a  ["Post CMS"](http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/) world and it should resonate with anyone who has devoted countless hours to installing, configuring, updating and coding big content management systems. To my mind, "post-CMS" means the disaggregation and, in many cases, elimination of the component parts of a CMS. What remains is simply the tools we need to for a particular project and nothing more.
+I didn't [make up](http://ben.balter.com/2012/10/01/welcome-to-the-post-cms-world/) it up, but I love the idea of a ["Post CMS"](http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/) world and it should resonate with anyone who has devoted countless hours to installing, configuring, updating and coding big content management systems. To my mind, "post-CMS" means the disaggregation and, in many cases, elimination of the component parts of a CMS. What remains is simply the tools we need to for a particular project and nothing more.
 
 Is there such a thing as a Post-CMS CMS? Perhaps, but it doesn't look much like what we've known in the past. A post-CMS CMS may or may not have a database of some sort, and it may have an editor and many other facets of a CMS, but it won't have layers of pre-built software that comes with it. Each of those components is not only entirely optional, but may very well come from different sources. They're _ála carte_ rather than _prix fixe_; tapas rather than Beef Wellington!
 
