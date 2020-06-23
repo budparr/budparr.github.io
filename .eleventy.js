@@ -28,7 +28,7 @@ var includes = require("./src/_includes/index");
  * @see {@link https://www.11ty.dev/docs/config/ Configuring 11ty}
  */
 module.exports = function (eleventyConfig) {
-  let env = process.env.ELEVENTY_ENV;
+  //eleventyConfig.setQuietMode(true);
 
   // Pass 11ty’s Conig object to the includes module (~/_includes)
   includes(eleventyConfig);
@@ -43,13 +43,13 @@ module.exports = function (eleventyConfig) {
    * Copy static assets to the output directory
    * @see {@link https://www.11ty.dev/docs/copy/ Passthrough copy in 11ty}
    */
-  eleventyConfig.addPassthroughCopy("css");
+  //eleventyConfig.addPassthroughCopy("css");
 
   /**
    * Have Eleventy watch the following additional files for live browsersync
    * @see @{@link https://www.11ty.dev/docs/config/#add-your-own-watch-targets Add your own watch targets in 11ty}
    */
-  // eleventyConfig.addWatchTarget('./**/*.css')
+  eleventyConfig.addWatchTarget('./**/*.css')
   eleventyConfig.addWatchTarget("./**/*.js");
 
   /**
@@ -60,7 +60,7 @@ module.exports = function (eleventyConfig) {
     callbacks: {
       ready: (err, bs) => {
         bs.addMiddleware("*", (req, res) => {
-          const content_404 = fs.readFileSync("_site/404.html");
+          const content_404 = fs.readFileSync("public/404.html");
           // Provides the 404 content without redirect
           res.write(content_404);
           // Add 404 http status code in request header

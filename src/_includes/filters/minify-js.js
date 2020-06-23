@@ -27,7 +27,7 @@ module.exports = eleventyConfig =>
    */
   eleventyConfig.addFilter('minifyJS', script => {
     // Only minify scripts for production
-    if(process.env.ELEVENTY_ENV === 'production') {
+    if(process.env.NODE_ENV === 'production') {
       var minified = Terser.minify(script)
       if(minified.error) {
         console.log('Terser error: ', minified.error)

@@ -4,22 +4,14 @@
  */
 
 // Import shortcodes to include
-// var archive = require("./archive");
-// var author = require("./author");
-// var authorMeta = require("./author-meta");
 var colophon = require("./colophon");
 var copyrightNotice = require("./copyright-notice");
-// var cssRoot = require("./css-root");
+
 var description = require("./description");
-// var editThisPage = require("./edit-this-page");
 // var externalCSS = require("./external-css");
-// var favicon = require("./favicon");
-// var gettingStarted = require("./getting-started");
+
 var headTag = require("./head-tag");
-// var inlineCSS = require("./inline-css");
-// var nav = require("./nav");
-// var pageDate = require("./page-date");
-// var paginationNav = require("./pagination-nav");
+var postcss = require("./css-inline");
 var siteFooter = require("./site-footer");
 var siteHeader = require("./site-header");
 var socialMeta = require("./social-meta");
@@ -38,7 +30,9 @@ module.exports = (eleventyConfig) => {
   colophon(eleventyConfig);
   copyrightNotice(eleventyConfig);
   description(eleventyConfig);
+  // externalCSS(eleventyConfig);
   headTag(eleventyConfig);
+  postcss(eleventyConfig)
   siteFooter(eleventyConfig);
   siteHeader(eleventyConfig);
   socialMeta(eleventyConfig);

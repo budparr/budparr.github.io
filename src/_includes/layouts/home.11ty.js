@@ -9,8 +9,8 @@
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#optional-data-method Optional `data` in JavaScript templates in 11ty}
  */
 exports.data = {
-  layout: 'layouts/base'
-}
+  layout: "layouts/base",
+};
 
 /**
  * The content of the home page template
@@ -21,10 +21,10 @@ exports.data = {
  * @see {@link https://www.11ty.dev/docs/pagination/ Pagination in 11ty}
  */
 exports.render = function (data) {
-  var l10n = data.site[data.locale]
-  var reversed = [...data.collections.posts.slice(-3)].reverse()
-  return `<article>    
+  var l10n = data.site[data.locale];
+  var reversed = [...data.collections.posts.slice(-3)].reverse();
+  return `<article class="bud">    
     ${data.content}
     
-  </article>`
-}
+  </article>`;
+};
