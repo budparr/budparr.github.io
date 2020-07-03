@@ -17,7 +17,7 @@
 module.exports = {
   name: {
     fullName: 'Reuben L. Lillie',
-    givenName: 'Reuben',
+    givenName: 'Bud',
     surname: 'Lillie'
   },
   social: {

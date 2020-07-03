@@ -9,7 +9,7 @@
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#optional-data-method Optional `data` in JavaScript templates in 11ty}
  */
 exports.data = {
-  layout: 'layouts/base'
+  layout: 'base'
 }
 
 /**

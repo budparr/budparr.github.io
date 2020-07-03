@@ -7,18 +7,7 @@
 // Require native Node.js modules
 var fs = require("fs");
 
-/**
- * Require the includes module for the following.
- *
- * - Filters (for modifying content on input)
- * - Shortcodes (for reusable content)
- * - Transforms (for modifying a template’s output)
- *
- * Storing these modules in separate directories,
- * rather than all in this file,
- * helps keep the codebase organized—at least that’s the idea.
- */
-var includes = require("./src/_includes/index");
+var includes = require("./layouts/index");
 
 /**
  * 11ty’s configuration module
@@ -49,8 +38,8 @@ module.exports = function (eleventyConfig) {
    * Have Eleventy watch the following additional files for live browsersync
    * @see @{@link https://www.11ty.dev/docs/config/#add-your-own-watch-targets Add your own watch targets in 11ty}
    */
-  eleventyConfig.addWatchTarget('./**/*.css')
-  eleventyConfig.addWatchTarget("./**/*.js");
+  eleventyConfig.addWatchTarget("./assets/css/*.css");
+  // eleventyConfig.addWatchTarget("./**/*.js");
 
   /**
    * Serve the rendered 404 page when using `eleventy --serve` locally
@@ -79,7 +68,9 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
-      input: "src",
+      data: "data",
+      includes: "layouts",
+      // content: "content",
       output: "public",
     },
   };

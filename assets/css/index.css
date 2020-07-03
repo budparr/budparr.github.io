@@ -1,14 +1,14 @@
-@import "tailwindcss/base";
+/* @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import "module.css";
+@import "module.css"; */
 
 .bud {
   color: green;
 }
-
+/* 
 .supercalifragilisticexpialidocious {
   @apply pt-2;
 }
-
+ */
 

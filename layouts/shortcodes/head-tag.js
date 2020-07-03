@@ -36,9 +36,10 @@ module.exports = (eleventyConfig) =>
       
       ${this.socialMeta(data)}
      
-       <style>
-         ${this.postcss(data)}
-       </style>       
-
+       
     </head>`;
+    // <style>
+    //      ${this.postcss(data)}
+    //    </style>       
+
   });

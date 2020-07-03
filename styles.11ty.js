@@ -17,10 +17,10 @@ const fileName = "index.css";
 
 module.exports = class {
   async data() {
-    const rawFilepath = path.join(__dirname, `./${fileName}`);
+    const rawFilepath = path.join(__dirname, `./assets/css/${fileName}`);
     // REMOVE console.log("pathme", rawFilepath);
     return {
-      permalink: `css/${fileName}`,
+      permalink: `./assets/css/${fileName}`,
       rawFilepath,
       rawCss: await fs.readFileSync(rawFilepath),
     };

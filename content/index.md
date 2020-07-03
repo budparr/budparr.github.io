@@ -1,6 +1,6 @@
 ---
 title: Bud Parr
-layout: layouts/home
+layout: home
 tags: ["home", "nav"]
 weight: 1
 permalink: "/"

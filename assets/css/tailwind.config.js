@@ -1,7 +1,7 @@
 module.exports = {
   purge: {
     mode: "all",
-    content: ["./src/_includes/**/*.11ty.js", "./src/_includes/**/*.js"],
+    content: ["./layouts/**/*.11ty.js", "./layouts/**/*.js"],
   },
   theme: {},
   variants: {},

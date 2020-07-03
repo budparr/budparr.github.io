@@ -4,7 +4,7 @@ const postcss = require("postcss");
 
 module.exports = (eleventyConfig) =>
   eleventyConfig.addPairedShortcode("postcss", async (code) => {
-    const filepath = path.join(__dirname, "src/_includes/styles/index.css");
+    const filepath = path.join(__dirname, "../../assets/css/index.css");
 
     
 

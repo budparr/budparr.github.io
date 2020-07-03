@@ -11,7 +11,7 @@
 exports.data = {
   locale: "en",
   title: "🎉 Congratulations! You found the sample 404 page!",
-  layout: "layouts/page",
+  layout: "../layouts/page",
   permalink: "404.html",
   templateEngineOverride: "11ty.js,md",
   eleventyExcludeFromCollections: true,
