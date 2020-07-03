@@ -29,10 +29,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
 
   /**
-   * Copy static assets to the output directory
+   * Copy static assets to the output directory, specifying a folder
    * @see {@link https://www.11ty.dev/docs/copy/ Passthrough copy in 11ty}
    */
-  //eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy({"static/uploads": "uploads"});
 
   /**
    * Have Eleventy watch the following additional files for live browsersync
@@ -61,16 +61,17 @@ module.exports = function (eleventyConfig) {
     },
   });
 
-  // If you want to use an alternative file structure,
-  // then you can uncomment this return statement
-  // and change the values for one or more of these directories
-  // (defaults shown).
+  /**
+   * Don't show all the rendered pages on command line. Override with --quiet=false
+   * @see {@link https://www.11ty.dev/docs/config/#enable-quiet-mode-to-reduce-console-noise Enable Quiet Mode to Reduce Console Noise}
+   */
+
+  eleventyConfig.setQuietMode(true);
 
   return {
     dir: {
       data: "data",
       includes: "layouts",
-      // content: "content",
       output: "public",
     },
   };
