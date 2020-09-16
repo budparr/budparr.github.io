@@ -1,0 +1,20 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "module.css";
+@import "tailwindcss/utilities";
+
+
+.bud {
+  color: blue;
+}
+
+body {  
+  @apply bg-green-600;
+}
+
+/* 
+.supercalifragilisticexpialidocious {
+  @apply pt-2;
+}
+ */
+

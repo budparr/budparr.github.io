@@ -1,0 +1,29 @@
+{
+  "name": "budparr.com",
+  "version": "1.0.0",
+  "description": "Personal Site of Bud Parr",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm-run-all clean build:css build:html",
+    "build:css": "NODE_ENV=production postcss assets/css/index.css -o static/dist/index.css",
+    "build:html": "ELEVENTY_ENV=production eleventy",
+    "clean": "rm -rf public static/dist data/hashes_css.json",
+    "watch": "npm-run-all --parallel watch:css watch:html",
+    "watch:css": "NODE_ENV=development postcss assets/css/index.css -o static/dist/index.css --watch",
+    "watch:html": "ELEVENTY_ENV=production eleventy --serve --quiet --port=8181",
+    "start": "npm run build:css && npm run watch"
+  },
+  "author": "budparr",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "autoprefixer": "^9.8.6",
+    "cssnano": "^4.1.10",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.2",
+    "postcss-hash": "^2.0.0",
+    "postcss-import": "^12.0.1",
+    "tailwindcss": "^1.8.8"
+  },
+  "dependencies": {}
+}
