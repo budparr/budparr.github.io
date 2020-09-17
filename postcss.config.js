@@ -1,8 +1,9 @@
-const hash = require("postcss-hash")({
-  algorithm: "sha256",
-  trim: 20,
-  manifest: "./data/hashes_css.json",
-});
+// Leaving hash for now while I think about serving the file
+// const hash = require("postcss-hash")({
+//   algorithm: "sha256",
+//   trim: 20,
+//   manifest: "./data/hashes_css.json",
+// });
 
 module.exports = {
   plugins: [
@@ -11,14 +12,12 @@ module.exports = {
     }),
     require("tailwindcss"),
     require("autoprefixer"),
-    require("cssnano"),
-    //   ...(process.env.NODE_ENV !== "TKdevelopment"
-    //     ? [
-    //         // require("cssnano"),
-    //         hash,
-    //       ]
-    //     : []),
+
+    ...(process.env.NODE_ENV !== "development"
+      ? [
+          require("cssnano"),
+          //  hash
+        ]
+      : []),
   ],
 };
-
-// console.log("NODE_ENV", env.NODE_ENV)

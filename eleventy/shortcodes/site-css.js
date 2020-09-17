@@ -19,6 +19,7 @@ module.exports = (eleventyConfig) =>
       var styles = `<style>${css}</style>`;
       return styles;
     } else {
+      // Load via tag. Improves developer experience.
       var css = "index.css";
       var styles = `<link href="/dist/${css}" rel="stylesheet" media="screen">`;
       return styles;
