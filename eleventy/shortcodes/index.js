@@ -10,14 +10,14 @@
 var siteTitle = require("./site-title");
 var siteHead = require("./site-head");
 //var cssExternal = require("./css-external")
-var cssInline = require("./css-inline");
+var siteCSS = require("./site-css");
 
 module.exports = (eleventyConfig) => {
   // Function calls to shortcodes to include
   //   archive(eleventyConfig)
   siteHead(eleventyConfig);
   siteTitle(eleventyConfig);
-  cssInline(eleventyConfig);
+  siteCSS(eleventyConfig);
 
   return;
 };

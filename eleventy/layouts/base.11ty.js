@@ -11,13 +11,10 @@ module.exports = function (data) {
   return `<!DOCTYPE html>
     <html lang="${data.locale ? l10n.locale : data.site.defaultLocale}">
     ${this.headTag(data)}
-      <body class="class">
-        
-      
+      <body class="">            
         <main id="main" class="grid gap">
           ${data.content}
-        </main>
-      
+        </main>      
       </body>
     </html>`;
 };

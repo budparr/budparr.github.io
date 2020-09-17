@@ -4,7 +4,7 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
   },
   purge: {
-    enabled: true,
+    enabled: false,
     mode: "all",
     content: ["./eleventy/layouts/*.11ty.js", "./eleventy/layouts/**/*.js"],
   },
