@@ -1,16 +1,4 @@
-/**
- * @file Defines a shortcode for the `<head>` markup
- * @author Reuben L. Lillie <reubenlillie@gmail.com>
- * @see {@link https://www.11ty.dev/docs/languages/javascript/#javascript-template-functions JavaScript template functions in 11ty}
- */
-
-/**
- * A JavaScript Template module for the `<head>`
- * @module _includes/shortcodes/head-tag
- * @param {Object} eleventyConfig 11ty’s Config API
- */
-module.exports = eleventyConfig =>
-
+module.exports = (eleventyConfig) =>
   /**
    * HTML `<head>` markup
    * @method
@@ -20,11 +8,13 @@ module.exports = eleventyConfig =>
    * @example `${this.headTag(data)}`
    * @see {@link https://www.11ty.dev/docs/data/ Using data in 11ty}
    */
-  eleventyConfig.addShortcode('headTag', function (data) {
+  eleventyConfig.addShortcode("headTag", function (data) {
     return `<head>
       ${this.titleTag(data)}
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">      
-      ${this.cssInline(data)}      
-    </head>`
-  })
+      ${this.siteCSS(data)}      
+      ${this.siteJS(data)}      
+      
+    </head>`;
+  });

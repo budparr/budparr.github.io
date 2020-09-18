@@ -10,11 +10,13 @@
 var siteTitle = require("./site-title");
 var siteHead = require("./site-head");
 var siteCSS = require("./site-css");
+var siteJS = require("./site-js");
 
 module.exports = (eleventyConfig) => {
   siteHead(eleventyConfig);
   siteTitle(eleventyConfig);
   siteCSS(eleventyConfig);
+  siteJS(eleventyConfig);
 
   return;
 };

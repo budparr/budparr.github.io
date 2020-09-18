@@ -6,7 +6,7 @@
  * @see {@link https://www.11ty.dev/docs/config/ Configuring 11ty}
  */
 
-var fs = require("fs");
+// var fs = require("fs");
 
 /**
  * Require the includes module for the following.
@@ -17,12 +17,8 @@ var fs = require("fs");
  */
 var includes = require("./eleventy/index");
 
-
-
-
 module.exports = function (eleventyConfig) {
-
-
+  console.log("Mode:", process.env.NODE_ENV);
   // Pass 11ty’s Conig object to the includes module (~/_includes)
   includes(eleventyConfig);
 
@@ -36,17 +32,22 @@ module.exports = function (eleventyConfig) {
    * Copy static assets to the output directory
    * @see {@link https://www.11ty.dev/docs/copy/ Passthrough copy in 11ty}
    */
-  eleventyConfig.addPassthroughCopy({"static/uploads": "uploads"});
-  eleventyConfig.addPassthroughCopy({ "static/dist": "dist" });
+  eleventyConfig.addPassthroughCopy({ "static/uploads": "uploads" });
+
 
   /**
    * Have Eleventy watch the following additional files for live browsersync
    * @see @{@link https://www.11ty.dev/docs/config/#add-your-own-watch-targets Add your own watch targets in 11ty}
    */
-   eleventyConfig.addWatchTarget('./static/dist/*.css')
+  eleventyConfig.addWatchTarget("./static/dist/*.css");
   //   eleventyConfig.addWatchTarget('./**/*.js')
 
-  return {    
+  eleventyConfig.setBrowserSyncConfig({
+    files: ["public/**/*"],
+    open: true,
+  });
+
+  return {
     dir: {
       includes: "eleventy",
       data: "data",

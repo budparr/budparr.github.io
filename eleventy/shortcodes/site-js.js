@@ -13,15 +13,11 @@ module.exports = (eleventyConfig) =>
    * @example `${this.inlineCSS(data)}`
    * @see {@link https://www.11ty.dev/docs/data/ Using data in 11ty}
    */
-  eleventyConfig.addShortcode("siteCSS", function () {
-    if (process.env.NODE_ENV === "TKproduction") {
-      var css = `${this.fileToString("public/dist/index.css")}`;
-      var styles = `<style>${css}</style>`;
-      return styles;
-    } else {
+  eleventyConfig.addShortcode("siteJS", function () {
+    
       // Load via tag. Improves developer experience.
-      var css = "index.css";
-      var styles = `<link href="/dist/${css}" rel="stylesheet" media="screen">`;
+      var jsFile = "index.js";
+      var styles = `<script src="/dist/${jsFile}" defer></script>`;
       return styles;
-    }
+
   });

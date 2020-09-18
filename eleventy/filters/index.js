@@ -8,14 +8,9 @@
 
 // Import filters to include
 var fileToString = require("./file-to-string");
-// var minifyCSS = require('./minify-css')
-// var minifyJS = require('./minify-js')
 
 module.exports = (eleventyConfig) => {
-  // Function calls to filters to include
   fileToString(eleventyConfig);
-  //   minifyCSS(eleventyConfig)
-  //   minifyJS(eleventyConfig)
 
   return;
 };
