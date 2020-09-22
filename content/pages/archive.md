@@ -3,7 +3,7 @@ title: 📔 A Blog for the Ages
 navTitle: 📔 Blog
 tags: nav
 weight: 3
-# layout: layouts/archive
+# layout: archive
 pagination:
   data: collections.posts
   size: 3

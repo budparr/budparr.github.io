@@ -11,12 +11,14 @@ var siteTitle = require("./site-title");
 var siteHead = require("./site-head");
 var siteCSS = require("./site-css");
 var siteJS = require("./site-js");
+var siteFooter = require("./site-footer");
 
 module.exports = (eleventyConfig) => {
   siteHead(eleventyConfig);
   siteTitle(eleventyConfig);
   siteCSS(eleventyConfig);
   siteJS(eleventyConfig);
+  siteFooter(eleventyConfig);
 
   return;
 };

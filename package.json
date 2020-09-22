@@ -10,7 +10,7 @@
     "clean": "rimraf public",
     "debug": "DEBUG=* npx eleventy",
     "dev": "NODE_ENV=development npm-run-all clean build:* -p dev:*",
-    "dev:11ty": "eleventy --serve --quiet",
+    "dev:11ty": "eleventy --serve --watch --quiet",
     "dev:rollup": "rollup -c -w"
   },
   "author": "budparr",

@@ -8,9 +8,6 @@
   color: blue;
 }
 
-body {  
-  @apply bg-gray-200;
-}
 
 /* 
 .supercalifragilisticexpialidocious {

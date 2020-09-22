@@ -9,12 +9,16 @@
 module.exports = function (data) {
   var l10n = data.site[data.locale];
   return `<!DOCTYPE html>
-    <html lang="${data.locale ? l10n.locale : data.site.defaultLocale}">
+    <html lang="${
+      data.locale ? l10n.locale : data.site.defaultLocale
+    }" class="no-js">
     ${this.headTag(data)}
-      <body class="">            
-        <main id="main" class="grid gap">
+      <body>            
+        <main id="main" class="grid gap bg-gray-600 text-black">
           ${data.content}
-        </main>      
+        </main>    
+        
+        ${this.siteFooter(data)}  
       </body>
     </html>`;
 };

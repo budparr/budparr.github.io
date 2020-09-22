@@ -6,7 +6,7 @@
 /*
  *Import Node.js native fs module for interacting with the file system
  */
-var fs = require('fs')
+var fs = require("fs");
 
 /**
  * An Eleventy filter for stringifying a file
@@ -14,8 +14,7 @@ var fs = require('fs')
  * @param {Object} eleventyConfig 11ty’s Config API
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#javascript-template-functions JavaScript template functions in 11ty}
  */
-module.exports = eleventyConfig =>
-
+module.exports = (eleventyConfig) =>
   /**
    * Converts a file’s contents to a string
    * @param {String} file The path of the file to convert
@@ -23,6 +22,6 @@ module.exports = eleventyConfig =>
    * @return {String} The file’s contents
    * @example `${this.fileToString('css/inline.css')}`
    */
-  eleventyConfig.addFilter('fileToString', file =>
+  eleventyConfig.addFilter("fileToString", (file) =>
     fs.readFileSync(`${file}`).toString()
-  )
+  );

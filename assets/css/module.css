@@ -1,3 +1,8 @@
 .pickle {  
   @apply text-white;
 }
+
+
+body {  
+  @apply font-serif text-2xl bg-gray-200;
+}
