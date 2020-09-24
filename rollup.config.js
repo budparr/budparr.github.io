@@ -17,7 +17,6 @@ export default {
     replace({
       DEV_MODE: dev,
     }),
-    // svg(),
     postcss({
       extract: true,
       minimize: !dev,
