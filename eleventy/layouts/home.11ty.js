@@ -19,6 +19,7 @@ exports.data = {
     var reversed = [...data.collections.posts.slice(-2)].reverse()
     return `<article class="p-32">      
       ${data.content}
+      <img data-src="https://picsum.photos/200/300" class="lazyload"/>
       
       
     </article>`

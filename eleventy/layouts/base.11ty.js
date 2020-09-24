@@ -14,7 +14,7 @@ module.exports = function (data) {
     }" class="no-js">
     ${this.headTag(data)}
       <body>            
-        <main id="main" class="grid gap bg-gray-600 text-black">
+        <main id="main" class="grid gap bg-gray-600 text-black" style="height:2000px;">
           ${data.content}
         </main>    
         
